@@ -3,8 +3,8 @@ import  json
 import requests
 import re
 session = requests.Session()
-admin='winkqr'
-password='xxr991211'
+admin='${{ secrets.USER }}'
+password='${{ secrets.PWD }}'
 
 if __name__ == '__main__':
     header = {
