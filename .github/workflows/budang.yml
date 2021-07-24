@@ -1,0 +1,27 @@
+name: mhbd-Action
+on:
+  workflow_dispatch: # 手动触发
+  schedule: # 计划任务触发
+    - cron: '0 00 * * *' 
+
+jobs:
+  mhbt-Action:
+    runs-on: ubuntu-20.04
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install Python
+      run: |
+        sudo apt update && \
+        sudo apt install python3
+      
+
+        
+    - name: run
+      run: |
+        cd ~/
+        git clone https://github.com/winkxx/mhbd-Action
+        chmod +x ~/mhbd-Action -R
+        cd ~/mhbd-Action
+        python3 budang.py
