@@ -18,8 +18,8 @@ if __name__ == '__main__':
     bbs=re.findall("<input type=\"hidden\" name=\"(.*?)\" value=\"bbs\" />", html.text, re.S)[0]
 
     data={
-       'pwuser':admin,
-        'pwpwd':password,
+       'pwuser':winkqr,
+        'pwpwd':xxr991211,
         'cktime':'3600',
         'jumpurl':'https://www.manhuabudang.com/index.php',
         'step':step,
