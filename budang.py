@@ -39,12 +39,12 @@ if __name__ == '__main__':
 
     #step1=re.findall("<input type=\"hidden\" name=\"step\" value=\"(.)\">", admin.text, re.S)[0]
     #print(step1)
-    verify=re.findall("<input type=\"hidden\" name=\"verify\" value=\"(.*?)\">", admin.text, re.S)[0]
+    #verify=re.findall("<input type=\"hidden\" name=\"verify\" value=\"(.*?)\">", admin.text, re.S)[0]
 
-    print(verify)
-    data1={
-        'step':step1
-    }
+    #print(verify)
+    #data1={
+        #'step':step1
+    #}
     endurl='https://www.manhuabudang.com/jobcenter.php?action=punch&verify=%s&verify=%s'%(verify,verify)
     end=session.post(endurl,headers=header,data=data1)
     print(end.text)
