@@ -38,7 +38,7 @@ if __name__ == '__main__':
     #print(admin.text)
 
     #step1=re.findall("<input type=\"hidden\" name=\"step\" value=\"(.)\">", admin.text, re.S)[0]
-    print(step1)
+    #print(step1)
     verify=re.findall("<input type=\"hidden\" name=\"verify\" value=\"(.*?)\">", admin.text, re.S)[0]
 
     print(verify)
