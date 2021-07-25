@@ -37,7 +37,7 @@ if __name__ == '__main__':
     admin=session.get(adminurl,headers=header)
     #print(admin.text)
 
-    step1=re.findall("<input type=\"hidden\" name=\"step\" value=\"(.)\">", admin.text, re.S)[0]
+    #step1=re.findall("<input type=\"hidden\" name=\"step\" value=\"(.)\">", admin.text, re.S)[0]
     print(step1)
     verify=re.findall("<input type=\"hidden\" name=\"verify\" value=\"(.*?)\">", admin.text, re.S)[0]
 
