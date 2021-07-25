@@ -23,7 +23,7 @@ if __name__ == '__main__':
         'cktime':'3600',
         'jumpurl':'https://www.manhuabudang.com/index.php',
         'step':step,
-        "bbs":bbs,
+        #"bbs":bbs,
         'question': '0',
         'lgt': '0',
         'hideid': '0'
