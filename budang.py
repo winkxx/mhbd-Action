@@ -15,7 +15,7 @@ if __name__ == '__main__':
     html=requests.get(url,headers=header)
     #开始获取模拟登陆需要的post数据-step
     step=re.findall("<input type=\"hidden\" name=\"step\" value=\"(.*?)\" />", html.text, re.S)[0]
-    bbs=re.findall("<input type=\"hidden\" name=\"(.*?)\" value=\"bbs\" />", html.text, re.S)[0]
+    #bbs=re.findall("<input type=\"hidden\" name=\"(.*?)\" value=\"bbs\" />", html.text, re.S)[0]
 
     data={
        'pwuser':admin,
