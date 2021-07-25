@@ -14,7 +14,7 @@ if __name__ == '__main__':
     url='https://www.manhuabudang.com/index.php'        #主页面地址
     html=requests.get(url,headers=header)
     #开始获取模拟登陆需要的post数据-step
-    step=re.findall("<input type=\"hidden\" name=\"step\" value=\"(.*?)\" />", html.text, re.S)[0]
+    #step=re.findall("<input type=\"hidden\" name=\"step\" value=\"(.*?)\" />", html.text, re.S)[0]
     #bbs=re.findall("<input type=\"hidden\" name=\"(.*?)\" value=\"bbs\" />", html.text, re.S)[0]
 
     data={
@@ -22,7 +22,7 @@ if __name__ == '__main__':
         'pwpwd':password,
         'cktime':'3600',
         'jumpurl':'https://www.manhuabudang.com/index.php',
-        'step':step,
+        #'step':step,
         #"bbs":bbs,
         'question': '0',
         'lgt': '0',
