@@ -4,8 +4,10 @@ import requests
 import re
 import time
 session = requests.Session()
-username='${{ secrets.USER }}'
-password='${{ secrets.PWD }}'
+#username='${{ secrets.USER }}'
+#password='${{ secrets.PWD }}'
+username='winkqr'
+password='xxr991211'
 
 if __name__ == '__main__':
     header = {
